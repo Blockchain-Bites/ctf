@@ -4,7 +4,7 @@
 
 
 
-## Token Vulnerable
+## #1 Token Vulnerable
 
 ### Objetivo:
 
@@ -18,3 +18,17 @@
 
 * delegatecall
 * storage layout
+
+## #2 Camouflage
+
+### Objetivo:
+
+* El `attacker` es añadido a un `whitelist`.
+* Es posible hacer una transferencia del `whitelist` a otra cuenta que no tenga código.
+* El `attacker` debe lograr tener un balance superior a 10 NFTs.
+
+### Pistas:
+
+* Crea Dos
+* Reentrancy
+* Precomputación

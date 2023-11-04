@@ -23,7 +23,7 @@
 
 ### Objetivo:
 
-* El `attacker` es añadido a un `whitelist`.
+* El `attacker` es añadido a un `whitelist` y es la única cuenta en dicha  `whitelist`.
 * Es posible hacer una transferencia del `whitelist` a otra cuenta que no tenga código.
 * El `attacker` debe lograr tener un balance superior a 10 NFTs.
 

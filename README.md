@@ -32,3 +32,16 @@
 * Crea Dos
 * Reentrancy
 * Precomputación
+
+## #3 NotInvited
+
+### Objetivo:
+
+* No has sido invitado a la fiesta y por ello no estás en la lista blanca. Ve la manera de cómo incluirte.
+* Puedes postular como aplicante para participar de un sorteo para ingresar a la lista blanca. Sin embargo, no es lo tuyo esperar.
+* Ganas si el método `success` cuando es llamando por el `attacker` da como resultado `true`.
+
+### Pistas:
+
+* Storage slot position
+* Storage layout

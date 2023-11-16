@@ -19,6 +19,10 @@
 * delegatecall
 * storage layout
 
+### Testing:
+
+`npx hardhat test test/TokenVulnerable.js`
+
 ## #2 Camouflage
 
 ### Objetivo:
@@ -33,6 +37,10 @@
 * Reentrancy
 * Precomputación
 
+### Testing:
+
+`npx hardhat test test/Camouflage.js`
+
 ## #3 NotInvited
 
 ### Objetivo:
@@ -45,3 +53,25 @@
 
 * Storage slot position
 * Storage layout
+
+### Testing:
+
+`npx hardhat test test/NotInvited.js`
+
+## #4 NaiveDonation
+
+### Objetivo:
+
+* Existe un contrato (`NaiveDonation`) que guarda una cantidad de Ether. Sin embargo, está mal resguardado.
+* Explota el mal patrón de autenticación usado para sustraer todo el balance de dicho contrato.
+* Asume que el `owner` del contrato `NaiveDonation`, mediante pishing, es convencido de donar `1 wei` a una address cualquiera.
+* Ganas si el método `success` como resultado `true`.
+
+### Pistas:
+
+* `tx.origin`.
+* `constructor`
+
+### Testing:
+
+`npx hardhat test test/NaiveDonation.js`
